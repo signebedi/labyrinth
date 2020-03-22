@@ -13,3 +13,5 @@
 
 
 # class WorkMode():
+
+print ('hello, world')
