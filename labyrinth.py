@@ -19,6 +19,7 @@ print(f"\nWelcome to Labyrinth, {player['name']}!\n\nThe evil king MINOS as inva
 class WalkingMode():
     def __init__(self):
         self.move=''
+        self.test=True
 
 # class BattleMode():
 

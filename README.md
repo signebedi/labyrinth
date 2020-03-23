@@ -20,7 +20,7 @@ tile, find a monster to battle, etc. A list of some of the GameModes are below:
 3. StoreMode
 4. WorkMode
 5. SaveMode
-6. StatMode
+6. StatMode 
 
 The Map will be a procedural map built around a center point -- the town. This section is still
 under development.
