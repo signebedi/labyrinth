@@ -15,20 +15,25 @@ of the game. For example, if a player is simply traversing the map, then the Gam
 and the options available to them will reflect that mode -- in this casem they can move to a new
 tile, find a monster to battle, etc. A list of some of the GameModes are below:
 
-    1. WalkingMode
-    2. BattleMode
-    3. StoreMode
-    4. WorkMode
-    5. SaveMode
-    6. StatMode
+1. WalkingMode
+2. BattleMode
+3. StoreMode
+4. WorkMode
+5. SaveMode
+6. StatMode
 
 The Map will be a procedural map built around a center point -- the town. This section is still
 under development.
 
 Developer notes-to-self:
-    1. https://medium.com/@angellom/writing-a-python-dungeon-game-part-i-47e35668f16b 
-    2. https://github.com/gilles-leblanc/gameproject
-    3. https://inventwithpython.com/makinggames.pdf
-    4. https://github.com/grantjenks/free-python-games
-    5. https://github.com/topics/cli-game # Examples of CLI games on Github
-    6. https://letstalkdata.com/2014/08/how-to-write-a-text-adventure-in-python/ # Excellent multi part tutorial for creating a CLI
+1. https://medium.com/@angellom/writing-a-python-dungeon-game-part-i-47e35668f16b 
+2. https://github.com/gilles-leblanc/gameproject
+3. https://inventwithpython.com/makinggames.pdf
+4. https://github.com/grantjenks/free-python-games
+5. https://github.com/topics/cli-game # Examples of CLI games on Github
+6. https://letstalkdata.com/2014/08/how-to-write-a-text-adventure-in-python/ # Excellent multi part tutorial for creating a CLI
+
+
+
+# AGNI, PUT THE BACKSTORY HERE
+
