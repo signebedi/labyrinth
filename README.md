@@ -32,7 +32,8 @@ Developer notes-to-self:
 4. https://github.com/grantjenks/free-python-games
 5. https://github.com/topics/cli-game # Examples of CLI games on Github
 6. https://letstalkdata.com/2014/08/how-to-write-a-text-adventure-in-python/ # Excellent multi part tutorial for creating a CLI
-
+7. https://codeburst.io/building-beautiful-command-line-interfaces-with-python-26c7e1bb54df # creating a beautiful CLI using the Click library
+8. https://github.com/asweigart/textadventuredemo # another *solid* example game from Al Sweigert
 
 
 # AGNI, PUT THE BACKSTORY HERE
