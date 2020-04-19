@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import json
+import json, time
 
 header = [
     '  _           _                _       _   _     ',
@@ -22,26 +22,30 @@ print("Welcome to LABYRINTH ! The evil king MINOS has invaded the ancient city o
 
 class Player():
     def __init__(self): # here we start by building all of the player statistics that we would like to use throughout the game
-        self.stats = { # one way we can store Player stats is in a Player.stats dict...
-            'hp':10, 
-            'lvl':1,
-            'str':1,
-            'int':1,
-            'con':1,
-            'gold':5,
-            'is_alive':True
-        }
         self.hp = 10
         self.lvl = 1
         self.str = 1
         self.int = 1
         self.con = 1
         self.gold = 5
+        self.location = "Town"
         self.is_alive = True
         self.name = input('\nWhat is your name?\n> ')
     def name(self):
         self
     def input(self): pass
+    def stats(self):
+        self.stat = f'\nname: {self.name}\nlocation: {player.location}\n\nhp: {self.hp} \nlvl: {self.lvl}\nstr: {self.str}\nint: {self.int}\ncon: {self.con}\ngold: {self.gold}'
+        return self.stat
+
+
+    def work(self, _time):
+        self.time = round(time.time())+_time
+        while(round(time.time()) <= self.time):
+            print (round(self.time - time.time()), end='\r')
+        self.gold += _time
+
+
     def dead(self):
         print(f'\nOh dear, {self.name}... it looks like you have been defeated. Better luck next time.\n')
         self.end_text = [
@@ -79,6 +83,9 @@ def main():
     while player.is_alive:
         i = input('\nWhat would you like to do next?\n> ')
         print(i)
+        if i == 'die':player.dead()
+        elif i == 'stats':print(player.stats())
+        elif i == 'work': time = input('work for how long?\n> '); player.work(int(time))
 
 if __name__ == '__main__':
     main()
