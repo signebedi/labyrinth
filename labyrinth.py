@@ -17,9 +17,6 @@ for item in header: print(item)
 
 print("Welcome to LABYRINTH ! The evil king MINOS has invaded the ancient city of ATHENS and enforces his rule through his son, the cruel MINOTAUR ! It is up to YOU to save the city and defeat the evil monster ! But beware... you must traverse the depths of the LABYRINTH to find and defeat your foe. Good luck !")
 
-# if player['input'] == 'help':
-#   print(player['options']) #each GameMode will set different player options
-
 class Player():
     def __init__(self): # here we start by building all of the player statistics that we would like to use throughout the game
         self.hp = 10
@@ -63,6 +60,15 @@ class WalkingMode():
         self.move=''
         self.test=True
 
+# class EnemyGeneratorMode():
+    # this was an idea I had: why don't we make it an option for a player to permanently generate a new
+    # enemy and to save it to a player_generated_enemies.json file
+
+# class BattleMode():
+
+# class StoreMode():
+
+# class WorkMode():
 # class EnemyGeneratorMode():
     # this was an idea I had: why don't we make it an option for a player to permanently generate a new
     # enemy and to save it to a player_generated_enemies.json file
