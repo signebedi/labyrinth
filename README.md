@@ -35,7 +35,7 @@ Developer notes-to-self:
 7. https://codeburst.io/building-beautiful-command-line-interfaces-with-python-26c7e1bb54df # creating a beautiful CLI using the Click library
 8. https://github.com/asweigart/textadventuredemo # another *solid* example game from Al Sweigert 
 
-This is the BAckstory:
+This is the Backstory:
 
-Welcome to LABYRINTH ! The evil king MINOS has invaded the ancient city of ATHENS and enforces his rule through his son, the cruel MINOTAUR ! It is up to YOU to save the city and defeat the evil monster ! But beware... you must traverse the depths of the LABYRINTH to find and defeat your foe. Good luck !
+Welcome to LABYRINTH! The evil king MINOS has invaded the ancient city of ATHENS and enforces his rule through his son, the cruel MINOTAUR! It is up to YOU to save the city and defeat the evil monster! But beware... you must traverse the depths of the LABYRINTH to find and defeat your foe. Good luck, Young adventurer! You will need it!
 
