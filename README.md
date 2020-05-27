@@ -6,7 +6,7 @@ The game's primary executable is labyrinth.py, which will contain all of the nec
 run the game as a command-line executable. While version 1.0 of this program runs on vanilla
 python, a requirements.txt file has been included in the repository for future versions.
 
-In addition, we will include a save file -- either as a JSON or CSV -- to preserve character
+In addition, we will include a save file -- as a JSON -- to preserve character
 data between instances of the game.
 
 Labyrinth is a CLI, object-oriented, and built around different classes of GameModes. Not to be 
@@ -23,7 +23,7 @@ tile, find a monster to battle, etc. A list of some of the GameModes are below:
 6. StatMode 
 
 The Map will be a procedural map built around a center point -- the town. This section is still
-under development.
+undergoing some development.
 
 Developer notes-to-self:
 1. https://medium.com/@angellom/writing-a-python-dungeon-game-part-i-47e35668f16b 
