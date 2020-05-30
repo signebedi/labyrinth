@@ -1,4 +1,4 @@
-kjhgkjhg{"enemies": [
+{"enemies": [
     {"id": 1, "name": "Hunter Boy", "hp": 15, "strength": "Earth", "weakness": "Fire",  "drops": ["Bow", "Arrow", "cooked morsel"]},
     {"id": 2, "name": "Scorpion", "hp": 15, "strength": "Water", "weakness": "Earth", "drops": ["Scorpion Tail", " coins"]},
     {"id": 3, "name": "Alien", "hp": 10, "strength": "Earth", "weakness": "Water", "drops": ["Alien Tail", "Potion", "coins"]},

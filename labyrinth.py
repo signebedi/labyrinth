@@ -21,6 +21,8 @@ class Player():
     def __init__(self): # here we start by building all of the player statistics that we would like to use throughout the game
         self.hp = 10
         self.lvl = 1
+        self.xp = 0
+        self.kills = 0
         self.str = 1
         self.int = 1
         self.con = 1
@@ -30,18 +32,48 @@ class Player():
         self.name = input('\nWhat is your name?\n> ')
     def name(self):
         self
-    def input(self): pass
     def stats(self):
-        self.stat = f'\nname: {self.name}\nlocation: {player.location}\n\nhp: {self.hp} \nlvl: {self.lvl}\nstr: {self.str}\nint: {self.int}\ncon: {self.con}\ngold: {self.gold}'
+        self.stat = f'\nname: {self.name}\nlocation: {player.location}\n\nhp: {self.hp} \nxp: {self.xp}\nlvl: {self.lvl}\nkills: {self.kills}\n\nstr: {self.str}\nint: {self.int}\ncon: {self.con}\ngold: {self.gold}'
+
+### IN THE FUTURE, WE SHOULD ADD ASCII ART THAT SHOWS THE CHARACTER AND THE ARMOUR THEY'RE WEARING
+
         return self.stat
 
 
     def work(self, _time):
-        self.time = round(time.time())+_time
-        while(round(time.time()) <= self.time):
-            print (round(self.time - time.time()), end='\r')
+        self.work_time = round(time.time())+_time
+        num = round(time.time())
+        while(round(time.time()) <= self.work_time):
+            # print (round(self.time - time.time()), end='\r')
+            if round(time.time()) == num: pass
+            else: print(round(self.work_time) - round(time.time()))
         self.gold += _time
-
+        
+    def counter(self):   
+        num = round(time.time())                            
+        while True:
+            if num == round(time.time()): pass
+            else:
+                num = round(time.time())                                                                                                                                                                      
+                print(num)
+                
+    def store(self):
+        self.mode = 'store'
+        print('\nyou walk into the general store to buy some goods\n')
+        while self.mode == 'store':
+            i = input('What would you like to buy? ')
+            if i == "options": pass
+            elif i == "upgrade str": pass
+            elif i == "upgrade con": pass
+            elif i == "upgrade int": pass
+            elif i == "upgrade sword": pass
+            elif i == "upgrade shield": pass
+            elif i == "upgrade armor":pass
+            elif i == "leave": print('\nyou left the general store\n'); self.mode = 'walking'
+            else: print('\nUnknown command! Please try again\n')
+    
+    def battle(self):
+        pass
 
     def dead(self):
         print(f'\nOh dear, {self.name}... it looks like you have been defeated. Better luck next time.\n')
@@ -60,38 +92,22 @@ class WalkingMode():
         self.move=''
         self.test=True
 
-# class EnemyGeneratorMode():
-    # this was an idea I had: why don't we make it an option for a player to permanently generate a new
-    # enemy and to save it to a player_generated_enemies.json file
-
-# class BattleMode():
-
-# class StoreMode():
-
-# class WorkMode():
-# class EnemyGeneratorMode():
-    # this was an idea I had: why don't we make it an option for a player to permanently generate a new
-    # enemy and to save it to a player_generated_enemies.json file
-
-# class BattleMode():
-
-# class StoreMode():
-
-# class WorkMode():
-
-
 player = Player()
 
 print(f"\nWelcome to Labyrinth, {player.name}!\n") 
 
 
 def main():
+    if player.hp <= 0: player.dead()
     while player.is_alive:
         i = input('\nWhat would you like to do next?\n> ')
         print(i)
-        if i == 'die':player.dead()
-        elif i == 'stats':print(player.stats())
+        if i == 'quit': player.dead()
+        elif i == 'stats': print(player.stats())
         elif i == 'work': time = input('work for how long?\n> '); player.work(int(time))
+        elif i == 'count': player.counter()
+        elif i == 'store': player.store()
+        else: print('\nUnknown command! Please try again\n')
 
 if __name__ == '__main__':
     main()
