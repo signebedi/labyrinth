@@ -21,7 +21,7 @@ tile, find a monster to battle, etc. A list of some of the modes are below:
 3. **Store**: the player buys new weaponws and upgrades stats
 4. **Work**: the player works for a time to earn money
 5. **Save**: the player saves their stats for the next round
-6. **Stats**: shows the player's statistics
+6. **Stats**: shows the player's statistics and allows them to modify their inventory
 
 The Map will be a procedural map built around a center point -- the town. This section is still
 undergoing some development.
@@ -33,7 +33,8 @@ undergoing some development.
 * merge walking() mode into the main game
 * add battle() mode
 * develop a system for random items to drop from monsters
-* modify stats mode to show ASCII art of the character and their armor, as well as their kill count
+* modify stats mode to show ASCII art of the character and their armor, as well as their kill count, and use *colorama* to modify the color of character stats
+* add a player inventory interface that allows the character to equip items and modify their stats
 
 
 Developer notes-to-self:
