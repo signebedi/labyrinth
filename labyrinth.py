@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-import json, time
+import json, time, colorama, os
+from colorama import Fore, Back, Style
+
+colorama.init(autoreset=True)
 
 header = [
     '  _           _                _       _   _     ',
@@ -17,23 +20,35 @@ for item in header: print(item)
 
 print("Welcome to LABYRINTH ! The evil king MINOS has invaded the ancient city of ATHENS and enforces his rule through his son, the cruel MINOTAUR ! It is up to YOU to save the city and defeat the evil monster ! But beware... you must traverse the depths of the LABYRINTH to find and defeat your foe. Good luck !")
 
+
 class Player():
     def __init__(self): # here we start by building all of the player statistics that we would like to use throughout the game
-        self.hp = 10
         self.lvl = 1
         self.xp = 0
         self.kills = 0
         self.str = 1
         self.int = 1
         self.con = 1
+        self.hp = 10*(self.lvl+self.con)
         self.gold = 5
         self.location = "Town"
+        self.mode = 'walking'
         self.is_alive = True
+        self.inventory = ['loincloth', 'woodenshield', 'healthpotion', 'bastardsword']
+        self.equipped = {'weapon':'bastardsword', 'armor':'loincloth','shield':'woodenshield'}
         self.name = input('\nWhat is your name?\n> ')
-    def name(self):
-        self
+    def inv(self):
+        equipped = str([x for x in self.inventory if x in self.equipped.values()])
+        unequipped = str([x for x in self.inventory if x not in self.equipped.values()])
+        equip_list = Fore.CYAN + Style.BRIGHT + equipped + Style.RESET_ALL + unequipped
+        return equip_list
+        
     def stats(self):
-        self.stat = f'\nname: {self.name}\nlocation: {player.location}\n\nhp: {self.hp} \nxp: {self.xp}\nlvl: {self.lvl}\nkills: {self.kills}\n\nstr: {self.str}\nint: {self.int}\ncon: {self.con}\ngold: {self.gold}'
+        if self.hp <= .25*(10*(self.lvl+self.con)): hp_color =  Fore.RED
+        elif self.hp >= .75*(10*(self.lvl+self.con)): hp_color = Fore.GREEN 
+        else: hp_color = Fore.YELLOW
+        
+        self.stat = f'\nname: ' + Fore.CYAN + Style.BRIGHT + f'{self.name}' + Style.RESET_ALL + f'\nlocation: {player.location}\n\nhp: '+ hp_color + Style.BRIGHT + f'{self.hp}' + Style.RESET_ALL + f' \nxp: {self.xp}\nlvl: {self.lvl}\nkills: {self.kills}\n\nstr: {self.str}\nint: {self.int}\ncon: {self.con}\ngold: {self.gold}\n\nInventory: {self.inv()}'
 
 ### IN THE FUTURE, WE SHOULD ADD ASCII ART THAT SHOWS THE CHARACTER AND THE ARMOUR THEY'RE WEARING
 
@@ -98,16 +113,19 @@ print(f"\nWelcome to Labyrinth, {player.name}!\n")
 
 
 def main():
-    if player.hp <= 0: player.dead()
     while player.is_alive:
         i = input('\nWhat would you like to do next?\n> ')
         print(i)
         if i == 'quit': player.dead()
         elif i == 'stats': print(player.stats())
+        elif i == 'hurt': player.hp -= 3; print('\noh no, you hurt yourself!\n')
         elif i == 'work': time = input('work for how long?\n> '); player.work(int(time))
         elif i == 'count': player.counter()
         elif i == 'store': player.store()
         else: print('\nUnknown command! Please try again\n')
+    
+        if player.hp <= 0: player.dead()
+
 
 if __name__ == '__main__':
     main()
