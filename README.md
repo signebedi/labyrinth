@@ -22,6 +22,7 @@ tile, find a monster to battle, etc. A list of some of the modes are below:
 4. **Work**: the player works for a time to earn money
 5. **Save**: the player saves their stats for the next round
 6. **Stats**: shows the player's statistics and allows them to modify their inventory
+7. **Inventory**: the player can review their inventory, equip and unequip items, see how different items affect their stats, and make upgrades to certain items
 
 The Map will be a procedural map built around a center point -- the town. This section is still
 undergoing some development.
