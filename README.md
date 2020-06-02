@@ -32,6 +32,7 @@ undergoing some development.
 * fix work() mode so that it counts down appropriately
 * finish store() mode
 * merge walking() mode into the main game
+* improve the extensiveness of Player.modes that, althought sometimes redundant, add some useful debug features
 * add battle() mode
 * develop a system for random items to drop from monsters
 * modify stats mode to show ASCII art of the character and their armor, as well as their kill count, and use *colorama* to modify the color of character stats
