@@ -11,26 +11,26 @@ items = [
 {'type':'armor','name': 'bronze armor','level':5,'description':'crafted by the hands of a great blacksmith',},
 {'type':'armor','name': 'reinforced armor','level':5,'description':'used for heavy raids, and gets the job done',},
 {'type':'armor','name': 'steel armor','level':10,'description':'the perfect armor for the hero that wishes to slay',},
-{'type':'armor','name': 'dwarf crafted armor','level':15,'description':'',},
-{'type':'armor','name': 'mithril armor','level':17,'description':'',},
-{'type':'armor','name': 'adamantine armor','level':20,'description':'',},
-{'type':'armor','name': 'god armor','level':25,'description':'',},
-{'type':'shield','name': 'leather shield','level':1,'description':'',},
+{'type':'armor','name': 'dwarf crafted armor','level':15,'description':'crafted by dwarves from deep underground',},
+{'type':'armor','name': 'mithril armor','level':17,'description':'this armor resembles silver, but is tougher and lighter than steel',},
+{'type':'armor','name': 'adamantine armor','level':20,'description':'very strong and durable armor, and provides good protection. ',},
+{'type':'armor','name': 'god armor','level':25,'description':'crafted by the god\'s hands themselves!',},
+{'type':'shield','name': 'flimsy shield','level':1,'description':'you might get a splinter, but it helps with protection',},
 {'type':'shield','name': 'bronze shield','level':5,'description':'',},
 {'type':'shield','name': 'steel shield','level':10,'description':'',},
 {'type':'shield','name': 'dragon shield','level':15,'description':'',},
 {'type':'shield','name': 'god shield','level':20,'description':'',},
-{'type':'potion','name':  'health potion','description':'',}
-{'type':'potion','name': 'strength potion','description':'',}
-{'type':'potion','name': 'endurance potion','description':'',}
-{'type':'potion','name': 'intelligence potion','description':'',}
-{'type':'potion','name': 'invincibility potion','description':'',}
+{'type':'potion','name':  'health potion','description':'',},
+{'type':'potion','name': 'strength potion','description':'',},
+{'type':'potion','name': 'endurance potion','description':'',},
+{'type':'potion','name': 'intelligence potion','description':'',},
+{'type':'potion','name': 'invincibility potion','description':'',},
 
-**spell**
-blizzard
-flame
-earthquake
-wind attack
-storm
-thunder
+# **spell**
+# blizzard
+# flame
+# earthquake
+# wind attack
+# storm
+# thunder
 ]

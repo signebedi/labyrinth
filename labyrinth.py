@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import json, time, colorama, os, 
+import json, time, colorama, os
 from colorama import Fore, Back, Style
 import items # this file contains a disctionary of all the available items in the game
 
