@@ -30,11 +30,12 @@ undergoing some development.
 
 ## To Do:
 * <strike>fix work() mode so that it counts down appropriately</strike> finished 6.2.2020
+* <strike>add items to items.py and integrate into labyrinth.py</strike> finished 6.2.2020
 * finish store() mode
 * merge walking() mode into the main game
 * improve the extensiveness of Player.modes that, althought sometimes redundant, add some useful debug features
 * add battle() mode
-* develop a system for random items to drop from monsters
+* develop a system for random potions and special items to drop from monsters
 * modify stats mode to show ASCII art of the character and their armor, as well as their kill count, and use *colorama* to modify the color of character stats
 * add a player inventory interface that allows the character to equip items and modify their stats
 
