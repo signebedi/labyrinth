@@ -38,9 +38,9 @@ class Player():
         self.equipped = {'weapon':'bastardsword', 'armor':'loincloth','shield':'woodenshield'}
         self.name = input('\nWhat is your name?\n> ')
     def inv(self):
-        equipped = str([x for x in self.inventory if x in self.equipped.values()])
-        unequipped = str([x for x in self.inventory if x not in self.equipped.values()])
-        equip_list = Fore.CYAN + Style.BRIGHT + equipped + Style.RESET_ALL + unequipped
+        equipped = str(", ".join([x for x in self.inventory if x in self.equipped.values()]))
+        unequipped = str(", ".join([x for x in self.inventory if x not in self.equipped.values()]))
+        equip_list = Fore.CYAN + Style.BRIGHT + equipped + Style.RESET_ALL + " " + unequipped
         return equip_list
         
     def stats(self):
@@ -61,7 +61,7 @@ class Player():
         while(round(time.time()) <= self.work_time):
             # print (round(self.time - time.time()), end='\r')
             if round(time.time()) == num: pass
-            else: print(round(self.work_time) - round(time.time()))
+            else: print(round(self.work_time) - round(time.time())); time.sleep(1)
         self.gold += _time
         
     def counter(self):   
