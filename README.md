@@ -1,7 +1,7 @@
 # labyrinth
 Labyrinth is a turn-based, textual role playing game written in python by Agni and Signe Bedi. 
 
-##Description
+## Description:
 Welcome to LABYRINTH! The evil king MINOS has invaded the ancient city of ATHENS and enforces his rule through his son, the cruel MINOTAUR! It is up to YOU to save the city and defeat the evil monster! But beware... you must traverse the depths of the LABYRINTH to find and defeat your foe. Good luck, dear adventurer! You will need it!
 
 ## Overview:
