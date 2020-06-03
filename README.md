@@ -29,7 +29,7 @@ undergoing some development.
 
 
 ## To Do:
-* <strike>fix work() mode so that it counts down appropriately</strike>
+* <strike>fix work() mode so that it counts down appropriately</strike> finished 6.2.2020
 * finish store() mode
 * merge walking() mode into the main game
 * improve the extensiveness of Player.modes that, althought sometimes redundant, add some useful debug features
