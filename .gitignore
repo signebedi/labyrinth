@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # removing c9 files
-*c9*
+.~c9*
