@@ -1,13 +1,13 @@
-{"enemies": [
-    {"id": 1, "name": "Hunter Boy", "hp": 15, "strength": "Earth", "weakness": "Fire",  "drops": ["Bow", "Arrow", "cooked morsel"]},
+enemies = [
+    {"id": 1, "name": "Hunter Boy", "hp": 15, "strength": "Earth", "weakness": "Fire",  "drops": ["Long Bow", "Arrow", "cooked morsel"]},
     {"id": 2, "name": "Scorpion", "hp": 15, "strength": "Water", "weakness": "Earth", "drops": ["Scorpion Tail", " coins"]},
     {"id": 3, "name": "Alien", "hp": 10, "strength": "Earth", "weakness": "Water", "drops": ["Alien Tail", "Potion", "coins"]},
     {"id": 4, "name": "Town Drunk", "hp": 5, "strength": "None", "weakness": "Fire", "drops": ["old shoe", "coins"]},
-    {"id": 5, "name": "Military Robot", "hp": 5, "strength": "Storm Magic", "weakness": "water magic", "drops": ["metal", "coins"]},
-    {"id": 6, "name": "witch", "hp": 6, "strength": "none", "weakness": "fire magic", "drops": ["broom", "coins"]},
-    {"id": 7, "name": "lava monster", "hp": 4, "strength": "fire magic", "weakness": "water magic", "drops": ["slime", "coins", "lava rock"]},
+    {"id": 5, "name": "Robot", "hp": 5, "strength": "Storm Magic", "weakness": "water magic", "drops": ["metal", "coins"]},
+    {"id": 6, "name": "Witch", "hp": 6, "strength": "none", "weakness": "fire magic", "drops": ["broom", "coins"]},
+    {"id": 7, "name": "Lava Monster", "hp": 4, "strength": "fire magic", "weakness": "water magic", "drops": ["slime", "coins", "lava rock"]},
     {"id": 8, "name": "Ghoul", "hp": 4, "strength": "water magic", "weakness": "fire magic", "drops": ["bone", "coins"]},
-    {"id": 9, "name": "worm", "hp": 4, "strength": "water magic", "weakness": "fire magic", "drops": ["slime"]},
+    {"id": 9, "name": "Worm", "hp": 4, "strength": "water magic", "weakness": "fire magic", "drops": ["slime"]},
     {"id": 10, "name": "Shark", "hp": 4, "strength": "water magic", "weakness": "storm magic", "drops": ["shark tooth", "coins"]},
     {"id": 11, "name": "ghost", "hp": 4, "strength": "none", "weakness": "water magic", "drops": ["ectoplasm", "coins"]},
     {"id": 12, "name": "Walking Guppie", "hp": 3, "strength": "none", "weakness": "storm magic", "drops": ["raw fish"]},
@@ -15,12 +15,12 @@
     {"id": 14, "name": "Town Gangsta", "hp": 7, "strength": "normal attack", "weakness": "storm magic", "drops": ["stolen items", "coins"]},
     {"id": 15, "name": "Electritin", "hp": 7, "strength": "water magic", "weakness": "none", "drops": ["antenna", "coins"]},
     {"id": 16, "name": "Fire Mage", "hp": 5, "strength": "fire magic", "weakness": "water magic", "drops": ["fire mage stick", "coins"]},
-    {"id": 17, "name": "water Mage", "hp": 5, "strength": "water magic", "weakness": "fire magic", "drops": ["water mage stick", "coins"]},
-    {"id": 18, "name": "knight", "hp": 6, "strength": "none", "weakness": "none", "drops": ["sword", "coins"]},
-    {"id": 19, "name": "ultra mage", "hp": 8, "strength": "none", "weakness": "none", "drops": ["ultimate mage stick", "coins"]},
-    {"id": 20, "name": "monkey king", "hp": 5, "strength": "water magic", "weakness": "fire magic", "drops": ["monkey crown", "coins"]},
+    {"id": 17, "name": "Water Mage", "hp": 5, "strength": "water magic", "weakness": "fire magic", "drops": ["water mage stick", "coins"]},
+    {"id": 18, "name": "Knight", "hp": 6, "strength": "none", "weakness": "none", "drops": ["sword", "coins"]},
+    {"id": 19, "name": "Ultra Mage", "hp": 8, "strength": "none", "weakness": "none", "drops": ["ultimate mage stick", "coins"]},
+    {"id": 20, "name": "Monkey king", "hp": 5, "strength": "water magic", "weakness": "fire magic", "drops": ["monkey crown", "coins"]},
     {"id": 21, "name": "Storm Mage", "hp": 6, "strength": "storm magic", "weakness": "fire magic", "drops": ["mage stick", "coins"]},
-    {"id": 22, "name": "barbarian", "hp": 10, "strength": "swords", "weakness": "fire", "drops": ["potion", "iron sword", "wooden shield"]},
+    {"id": 22, "name": "Barbarian", "hp": 10, "strength": "swords", "weakness": "fire", "drops": ["potion", "iron sword", "wooden shield"]},
     {"id": 23, "name": "Whale", "hp": 6, "strength": "water magic", "weakness": "electric magic", "drops": ["blubber", "coins"]},
     {"id": 24, "name": "Zombie", "hp": 7, "strength": "fire", "weakness": "water magic", "drops": ["brain mush", "coins"]}
-]}
+]

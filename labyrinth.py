@@ -2,7 +2,8 @@
 
 import json, time, colorama, os
 from colorama import Fore, Back, Style
-import items # this file contains a disctionary of all the available items in the game
+from items import items # this file contains a dictionary of all the available items in the game
+from enemies import enemies # this file contains a dictionary of all the enemies you can fight in the game
 
 colorama.init(autoreset=True)
 

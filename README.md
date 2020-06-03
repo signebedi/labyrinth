@@ -1,16 +1,18 @@
 # labyrinth
 Labyrinth is a turn-based, textual role playing game written in python by Agni and Signe Bedi. 
 
-*Welcome to LABYRINTH! The evil king MINOS has invaded the ancient city of ATHENS and enforces his rule through his son, the cruel MINOTAUR! It is up to YOU to save the city and defeat the evil monster! But beware... you must traverse the depths of the LABYRINTH to find and defeat your foe. Good luck, Young adventurer! You will need it!*
+##Description
+Welcome to LABYRINTH! The evil king MINOS has invaded the ancient city of ATHENS and enforces his rule through his son, the cruel MINOTAUR! It is up to YOU to save the city and defeat the evil monster! But beware... you must traverse the depths of the LABYRINTH to find and defeat your foe. Good luck, dear adventurer! You will need it!
 
-The game's primary executable is labyrinth.py, which will contain all of the necessary code to
+## Overview:
+The game's primary executable is labyrinth.py, which will contain all of the necessary code to 
 run the game as a command-line executable. While version 1.0 of this program runs on vanilla
 python, a requirements.txt file has been included in the repository for future versions.
 
 In addition, we will include a save file -- as a JSON -- to preserve character
 data between instances of the game.
 
-Labyrinth is a CLI, object-oriented, and built around the Player class with multiple modes. Not to be 
+Labyrinth is a CLI, object-oriented, and built around the Player class with multiple game modes. Not to be 
 confused with difficulty-levels, a mode provides decisions to the player based on the context 
 of the game. For example, if a player is simply traversing the map, then the mode is Player.walk(),
 and the options available to them will reflect that mode -- in this case they can move to a new
@@ -30,7 +32,7 @@ undergoing some development.
 
 ## To Do:
 * <strike>fix work() mode so that it counts down appropriately</strike> finished 6.2.2020
-* <strike>add items to items.py and integrate into labyrinth.py</strike> finished 6.2.2020
+* <strike>add some initial items to items.py and integrate into labyrinth.py</strike> finished 6.2.2020
 * finish store() mode
 * merge walking() mode into the main game
 * improve the extensiveness of Player.modes that, althought sometimes redundant, add some useful debug features
@@ -40,7 +42,7 @@ undergoing some development.
 * add a player inventory interface that allows the character to equip items and modify their stats
 
 
-Developer notes-to-self:
+## Video game resources for Angus:
 1. https://medium.com/@angellom/writing-a-python-dungeon-game-part-i-47e35668f16b 
 2. https://github.com/gilles-leblanc/gameproject
 3. https://inventwithpython.com/makinggames.pdf

@@ -13,6 +13,8 @@
 # ]
 # print(map[0][2]) # this will return 'x', which we can incorporate into our movement logic
 import random
+from enemies import enemies
+
 class Map:
     def __init__(self):
         self.static = {
@@ -22,10 +24,14 @@ class Map:
             "Harbor": ["Town"],
         }
     def move(self, location):
-        self.attacked = random.randint(1,48)
-        if self.attacked <= 24: print(f"you've been attacked by a...")
-        print(self.static[location])
-        move = input('where do you want to move to:\n> ')
+        try: 
+            print(self.static[location],'\n')
+            self.attacked = random.randint(1,48)
+            if self.attacked <= 24: print(f"\nyou've been attacked by a {enemies[self.attacked]['name']}")
+        except:
+            print('no such location available')
+
+        move = input('what do you want to do next:\n> ')
         self.move(move)
 
 temp = Map()
