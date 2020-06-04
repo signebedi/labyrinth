@@ -35,7 +35,7 @@ To make calls to inventory items, use the following synax:
 <pre><code>items[0]['description']</pre></code>
 
 To make calls to the list of enemies, use the following syntax:
-<pre><code>(enemies[1] ['name'])</pre></code>
+<pre><code>enemies[1]['name']</pre></code>
 
 To debug, import the code into the python interactive prompt:
 <pre><code>from player import Player
