@@ -38,9 +38,9 @@ To make calls to the list of enemies, use the following syntax:
 <pre><code>(enemies[1] ['name'])</pre></code>
 
 To debug, import the code into the python interactive prompt:
-<pre><code>from labyrinth import Player</pre></code>
-<pre><code>from enemies import enemies</pre></code>
-<pre><code>from items import items</pre></code>
+<pre><code>from player import Player
+from enemies import enemies
+from items import items</pre></code>
 
 Then you can create a Player object:
 <pre><code>player = Player()</pre></code>
