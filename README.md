@@ -9,9 +9,6 @@ The game's primary executable is labyrinth.py, which will contain all of the nec
 run the game as a command-line executable. While version 1.0 of this program runs on vanilla
 python, a requirements.txt file has been included in the repository for future versions.
 
-In addition, we will include a save file -- as a JSON -- to preserve character
-data between instances of the game.
-
 Labyrinth is a CLI, object-oriented, and built around the Player class with multiple game modes. Not to be 
 confused with difficulty-levels, a mode provides decisions to the player based on the context 
 of the game. For example, if a player is simply traversing the map, then the mode is Player.walk(),
@@ -30,20 +27,21 @@ The Map will be a procedural map built around a center point -- the town. This s
 undergoing some development.
 
 
-## Syntax
+## Debugging
 To make calls to inventory items, use the following synax:
 <pre><code>items[0]['description']</pre></code>
 
 To make calls to the list of enemies, use the following syntax:
-<pre><code>enemies[1]['name']</pre></code>
+<pre><code>enemies[0]['name']</pre></code>
 
 To debug, import the code into the python interactive prompt:
 <pre><code>from player import Player
 from enemies import enemies
 from items import items</pre></code>
 
-Then you can create a Player object:
-<pre><code>player = Player()</pre></code>
+Then you can create a Player object and list all its available properties:
+<pre><code>player = Player()
+dir(player)</pre></code>
 
 
 ## To Do:
@@ -53,6 +51,7 @@ Then you can create a Player object:
 * finish store() mode
 * improve the extensiveness of Player.modes that, althought sometimes redundant, add some useful debug features
 * add battle() mode
+* add a save feature that saves the players data to save.py
 * develop a system for random potions and special items to drop from monsters
 * modify stats mode to show ASCII art of the character and their armor, as well as their kill count, and use *colorama* to modify the color of character stats
 * add a player inventory interface that allows the character to equip items and modify their stats
