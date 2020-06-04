@@ -1,0 +1,103 @@
+1. Find a handful of images that we can use to represent the hero
+
+https://www.asciiart.eu/weapons/swords
+
+
+
+                HELMET
+                
+                
+SHIELD          ARMOR           WEAPON
+
+
+OTHER ITEMS ......
+
+
+                                    /)
+                                   //
+                 __*_             //
+              /-(____)           //
+             ////- -|\          //
+          ,____o% -,_          //
+         /  \\   |||  ;       //
+        /____\....::./\      //
+       _/__/#\_ _,,_/--\    //
+       /___/######## \/""-(\</
+      _/__/ '#######  ""^(/</
+    __/ /   ,)))=:=(,    //.
+   |,--\   /Q...... /.  (/
+   /       .Q....../..\
+          /.Q ..../...\
+         /......./.....\
+         /...../  \.....\
+         /_.._./   \..._\
+          (` )      (` )
+          | /        \ |
+          '(          )'
+         /+|          |+\
+         |,/          \,/  
+         
+         
+         
+
+  .||, 
+ \.`',/
+ = ,. =
+ / || \
+   ||  
+   ||
+   ||
+   ||
+   ||
+   ||  
+   ||  
+   ||  
+   ||  
+   ||  
+   ||  
+   ||  
+   ||  
+   ||  
+
+
+    /'-./\_
+   :    ||,>
+    \.-'||
+        ||
+        ||
+        || 
+        ||
+        || 
+        ||
+        || 
+        ||
+        || 
+        ||
+        ||
+        || 
+        ||
+        || 
+        
+        
+2. Find ways to modify the character image based on the items they are carrying
+
+
+
+
+
+
+
+
+
+
+
+3. Find ASCII art for the enemies that we fight (skeleton, minotaur, zombie, mage, etc.)
+
+
+
+
+
+
+
+
+

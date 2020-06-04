@@ -1,3 +1,5 @@
+# this file contains a dictionary of all the available items in the game
+
 items = [
 {'type':'weapon','name': 'spear','level':1,'description':'this is a spear made thousands of years ago',},
 {'type':'weapon','name': 'slingshot','level':1,'description':'a great choice for hunters of all skill',},
@@ -7,7 +9,7 @@ items = [
 {'type':'weapon','name': 'long sword','level':10,'description':'a great choice for warriors of great strength',},
 {'type':'weapon','name': 'crossbow','level':10,'description':'used for defending great fortresses',},
 {'type':'weapon','name': 'great sword','level':15,'description':'the ultimate sword choice for the person who wishes to strike fear in the eyes of their enemys.',},
-{'type':'armor','name': 'leather armor','level':1,'description':'used for camouflage by hunters alike',},
+{'type':'armor','name': 'leather tunic','level':1,'description':'used for camouflage by hunters alike',},
 {'type':'armor','name': 'bronze armor','level':5,'description':'crafted by the hands of a great blacksmith',},
 {'type':'armor','name': 'reinforced armor','level':5,'description':'used for heavy raids, and gets the job done',},
 {'type':'armor','name': 'steel armor','level':10,'description':'the perfect armor for the hero that wishes to slay',},
@@ -16,7 +18,7 @@ items = [
 {'type':'armor','name': 'adamantine armor','level':20,'description':'very strong and durable armor, and provides good protection. ',},
 {'type':'armor','name': 'god armor','level':25,'description':'crafted by the god\'s hands themselves!',},
 {'type':'shield','name': 'flimsy shield','level':1,'description':'you might get a splinter, but it helps with protection',},
-{'type':'shield','name': 'bronze shield','level':5,'description':'favored by mercenaries that drift upon the road to  nibelheim',},
+{'type':'shield','name': 'bronze shield','level':5,'description':'favored by mercenaries that drift upon the road to nibelheim',},
 {'type':'shield','name': 'steel shield','level':10,'description':'used by skilled warriors for ultimate protection',},
 {'type':'shield','name': 'dragonscale shield','level':15,'description':'this shield is made from dragon\'s scales, and is for ultimate protection',},
 {'type':'shield','name': 'god shield','level':20,'description':'not even the most sharpened sword can penetrate this shield\'s protection',},
@@ -25,14 +27,25 @@ items = [
 {'type':'potion','name': 'endurance potion','description':'this pitch black potion will sharply increase your maximum health during a battle',},
 {'type':'potion','name': 'intelligence potion','description':'this glowing cyan liquid will make the drinker\'s brain grow 3x it\'s normal size',},
 {'type':'potion','name': 'invincibility potion','description':'this potion makes the user invincible, and not feel pain for one battle ',},
+{'type':'spell','name': 'blizzard','level':1,'description':'casts a freezing cold storm upon your opponent',},
+{'type':'spell','name': 'flame','level':5,'description':'creates a huge flaming ball that flies into your opponent',},
+{'type':'spell','name': 'wind','level':7,'description':'makes a heavy wind to blow your opponent away',},
+{'type':'spell','name': 'wave','level':10,'description':'a huge wave is cast upon your opponent, washing them away',},
+{'type':'spell','name': 'lightning','level':15,'description':'lighting strikes your opponent with tremendous force',},
+{'type':'spell','name': 'hurricane','level':17,'description':'',},
+{'type':'spell','name': 'earthquake','level':17,'description':'a very strong and durable helmet that provides good protection. ',},
+{'type':'spell','name': 'tornado','level':20,'description':'crafted by the god\'s hands themselves!',},
+{'type':'spell','name': 'tsunami','level':23,'description':'crafted by the god\'s hands themselves!',},
+{'type':'spell','name': 'rage','level':25,'description':'crafted by the god\'s hands themselves!',},
 
-# **spell**
-# blizzard
-# flame
-# wind
-# thunder
-# lightning
-# storm
-# earthquake
-# rage
+{'type':'helmet','name': 'leather hat','level':1,'description':'used for camouflage by hunters alike',},
+{'type':'helmet','name': 'bronze helmet','level':5,'description':'crafted by the hands of a great blacksmith',},
+{'type':'helmet','name': 'reinforced helmet','level':5,'description':'used for heavy raids, and gets the job done',},
+{'type':'helmet','name': 'steel helmat','level':10,'description':'the perfect helmet for the hero that wishes to slay',},
+{'type':'helmet','name': 'dwarf crafted helmet','level':15,'description':'crafted by dwarves from deep underground',},
+{'type':'helmet','name': 'mithril helmet','level':17,'description':'this helmet\'s metal resembles silver, but is tougher and lighter than steel',},
+{'type':'helmet','name': 'adamantine helmet','level':20,'description':'a very strong and durable helmet that provides good protection. ',},
+{'type':'helmet','name': 'god helmet','level':25,'description':'crafted by the god\'s hands themselves!',},
+
+
 ]

@@ -1,3 +1,8 @@
+# this script is used to build and test the various map features associated with the game
+
+
+
+
 # class MapGenerator(x=100,y=100): # this is where we will generate the map for each game
     # def __init__(self):
         # here we want to build a map similar to the one below that 

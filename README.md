@@ -30,11 +30,27 @@ The Map will be a procedural map built around a center point -- the town. This s
 undergoing some development.
 
 
+## Syntax
+To make calls to inventory items, use the following synax:
+<pre><code>items[0]['description']</pre></code>
+
+To make calls to the list of enemies, use the following syntax:
+<pre><code>(enemies[1] ['name'])</pre></code>
+
+To debug, import the code into the python interactive prompt:
+<pre><code>from labyrinth import Player</pre></code>
+<pre><code>from enemies import enemies</pre></code>
+<pre><code>from items import items</pre></code>
+
+Then you can create a Player object:
+<pre><code>player = Player()</pre></code>
+
+
 ## To Do:
 * <strike>fix work() mode so that it counts down appropriately</strike> finished 6.2.2020
 * <strike>add some initial items to items.py and integrate into labyrinth.py</strike> finished 6.2.2020
+* merge walking() mode into the main game, currently in map.py
 * finish store() mode
-* merge walking() mode into the main game
 * improve the extensiveness of Player.modes that, althought sometimes redundant, add some useful debug features
 * add battle() mode
 * develop a system for random potions and special items to drop from monsters

@@ -7,21 +7,6 @@ from enemies import enemies # this file contains a dictionary of all the enemies
 
 colorama.init(autoreset=True)
 
-header = [
-    '  _           _                _       _   _     ',
-    ' | |         | |              (_)     | | | |    ',
-    ' | |     __ _| |__  _   _ _ __ _ _ __ | |_| |__  ',
-    " | |    / _` | '_ \| | | | '__| | '_ \| __| '_ \ ",
-    ' | |___| (_| | |_) | |_| | |  | | | | | |_| | | |',
-    ' |______\__,_|_.__/ \__, |_|  |_|_| |_|\__|_| |_|',
-    '                     __/ |                       ',
-    '                    |___/                        '
-]
-
-for item in header: print(item)
-
-print("Welcome to LABYRINTH ! The evil king MINOS has invaded the ancient city of ATHENS and enforces his rule through his son, the cruel MINOTAUR ! It is up to YOU to save the city and defeat the evil monster ! But beware... you must traverse the depths of the LABYRINTH to find and defeat your foe. Good luck !")
-
 
 class Player():
     def __init__(self): # here we start by building all of the player statistics that we would like to use throughout the game
@@ -50,7 +35,7 @@ class Player():
         elif self.hp >= .75*(10*(self.lvl+self.con)): hp_color = Fore.GREEN 
         else: hp_color = Fore.YELLOW
         
-        self.stat = f'\nname: ' + Fore.CYAN + Style.BRIGHT + f'{self.name}' + Style.RESET_ALL + f'\nlocation: {player.location}\n\nhp: '+ hp_color + Style.BRIGHT + f'{self.hp}' + Style.RESET_ALL + f' \nxp: {self.xp}\nlvl: {self.lvl}\nkills: {self.kills}\n\nstr: {self.str}\nint: {self.int}\ncon: {self.con}\ngold: {self.gold}\n\nInventory: {self.inv()}'
+        self.stat = f'\nname: ' + Fore.CYAN + Style.BRIGHT + f'{self.name}' + Style.RESET_ALL + f'\nlocation: {self.location}\n\nhp: '+ hp_color + Style.BRIGHT + f'{self.hp}' + Style.RESET_ALL + f' \nxp: {self.xp}\nlvl: {self.lvl}\nkills: {self.kills}\n\nstr: {self.str}\nint: {self.int}\ncon: {self.con}\ngold: {self.gold}\n\nInventory: {self.inv()}'
 
 ### IN THE FUTURE, WE SHOULD ADD ASCII ART THAT SHOWS THE CHARACTER AND THE ARMOUR THEY'RE WEARING
 
@@ -104,17 +89,29 @@ class Player():
         self.is_alive = False
 
 
-class WalkingMode():
-    def __init__(self):
-        self.move=''
-        self.test=True
-
-player = Player()
-
-print(f"\nWelcome to Labyrinth, {player.name}!\n") 
-
 
 def main():
+    
+    header = [
+        '  _           _                _       _   _     ',
+        ' | |         | |              (_)     | | | |    ',
+        ' | |     __ _| |__  _   _ _ __ _ _ __ | |_| |__  ',
+        " | |    / _` | '_ \| | | | '__| | '_ \| __| '_ \ ",
+        ' | |___| (_| | |_) | |_| | |  | | | | | |_| | | |',
+        ' |______\__,_|_.__/ \__, |_|  |_|_| |_|\__|_| |_|',
+        '                     __/ |                       ',
+        '                    |___/                        '
+    ]
+    
+    for item in header: print(item)
+    
+    print("Welcome to LABYRINTH ! The evil king MINOS has invaded the ancient city of ATHENS and enforces his rule through his son, the cruel MINOTAUR ! It is up to YOU to save the city and defeat the evil monster ! But beware... you must traverse the depths of the LABYRINTH to find and defeat your foe. Good luck !")
+    
+    player = Player()
+
+    print(f"\nWelcome to Labyrinth, {player.name}!\n") 
+
+    
     while player.is_alive:
         i = input('\nWhat would you like to do next?\n> ')
         print(i)
