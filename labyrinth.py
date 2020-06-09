@@ -2,6 +2,7 @@
 from items import items # this file contains a dictionary of all the available items in the game
 from enemies import enemies # this file contains a dictionary of all the enemies you can fight in the game
 from player import Player # this file contains the Player() class, which is the building block of the game
+from dungeon import map # this file contains all map elements
 
 import time, colorama
 from colorama import Fore, Back, Style
@@ -38,6 +39,7 @@ def main():
         elif i == 'work': time = input('work for how long?\n> '); player.work(int(time))
         elif i == 'count': player.counter()
         elif i == 'store': player.store()
+        elif i == 'move': player.move(map)
         else: print('\nUnknown command! Please try again\n')
     
         if player.hp <= 0: player.dead()

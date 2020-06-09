@@ -28,7 +28,7 @@ enemies = [
 ]
 
 
-locations = {
+known_locations = {
     "Town":["Town Drunk", "Robot","Dog","Gangsta","Knight",],
     "Graveyard":["Witch", "Lava Monster", "Ghoul", "Ghost", "Fire Mage", "Water Mage", "Storm Mage", "Ultra Mage","Zombie",],
     "Forest":["Hunter", "Scorpion", "Alien", "Worm", "Barbarian","Monkey",],

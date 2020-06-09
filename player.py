@@ -32,11 +32,19 @@ class Player():
         
         self.stat = f'\nname: ' + Fore.CYAN + Style.BRIGHT + f'{self.name}' + Style.RESET_ALL + f'\nlocation: {self.location}\n\nhp: '+ hp_color + Style.BRIGHT + f'{self.hp}' + Style.RESET_ALL + f' \nxp: {self.xp}\nlvl: {self.lvl}\nkills: {self.kills}\n\nstr: {self.str}\nint: {self.int}\ncon: {self.con}\ngold: {self.gold}\n\nInventory: {self.inv()}'
 
-### IN THE FUTURE, WE SHOULD ADD ASCII ART THAT SHOWS THE CHARACTER AND THE ARMOUR THEY'RE WEARING
+        ### IN THE FUTURE, WE SHOULD ADD ASCII ART THAT SHOWS THE CHARACTER AND THE ARMOUR THEY'RE WEARING
 
         return self.stat
 
-
+    def move(self, map):
+        i = input(f'\n\nWhere do you want to move to? Your options are:{map[self.location]}\n\n> ')
+        if i.capitalize() in map[self.location]:
+            self.location = i.capitalize()
+            print(f'You moved to {i}.\n\n')
+        else:
+            print(f'\nInvalid Option. Your options are:{map[self.location]}\n')
+                
+            
     def work(self, _time):
         self.work_time = round(time.time())+_time
         num = round(time.time())

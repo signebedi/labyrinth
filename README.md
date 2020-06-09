@@ -47,9 +47,9 @@ dir(player)</pre></code>
 ## To Do:
 * <strike>fix work() mode so that it counts down appropriately</strike> finished 6.2.2020
 * <strike>add some initial items to items.py and integrate into labyrinth.py</strike> finished 6.2.2020
-* merge walking() mode and the static map into the main game, currently in map.py
-* select ASCII images to use for weapon, armor, shield, helmet (use color coding to distinguish between unique items); merge ASCII images into player.py; delete ASCII.txt
-    * modify stats mode to show ASCII art of the character and their armor, as well as their kill count, and use colorama to modify the color of character stats
+* <strike>merge walking() mode and the static map into the main game, currently in map.py </strike>
+* <strike>select ASCII images to use for weapon, armor, shield, helmet (use color coding to distinguish between unique items); merge ASCII images into player.py; delete ASCII.txt</strike>
+* modify stats mode to show ASCII art of the character and their armor, as well as their kill count, and use colorama to modify the color of character stats
 * finish store() mode
 * add battle() mode
 * add save() mode
