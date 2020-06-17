@@ -1,6 +1,6 @@
-import time, colorama
+import time, colorama, random
 from colorama import Fore, Back, Style
-
+from enemies import enemies
 
 class Player():
     def __init__(self): # here we start by building all of the player statistics that we would like to use throughout the game
@@ -78,7 +78,66 @@ class Player():
             else: print('\nUnknown command! Please try again\n')
     
     def battle(self):
-        pass
+        
+        # first, we find a random monster
+        
+        r = random.randint(0,len(enemies))
+        enemy = enemies[r]
+        enemy_hp = enemy['hp']*self.lvl^2
+        enemy_name = enemy['name']
+        
+        print(f'\nYou found a {enemy_name} to battle!\n')
+        
+        # next, we create an infite loop
+        
+        while True:
+            cmd = input(f'\nYour hp is {self.hp}. The {enemy["name"]}\'s health is {enemy_hp}. what would you like to do?\n> ')
+            
+            if cmd == 'atk': 
+                player_dmg = self.lvl*random.randint(0, 10)
+                enemy_hp -= player_dmg
+                print(f'\nyou attacked the {enemy_name} and dealt {player_dmg} damage.\n')
+
+            elif cmd == 'spell': 
+                spell = input('\nwhat spell do you want to cast? ****PLACEHOLDER FOR SPELLBOOK*****\n> ')
+                
+                if spell == 'fire': 
+                    player_dmg = self.lvl*random.randint(0, 10)*self.int
+                    enemy_hp -= player_dmg
+                    print(f'\nyou cast fire on the {enemy_name} and dealt {player_dmg} damage.\n')
+    
+                
+                else: print("\nInvalid Spell\n")
+            
+            elif cmd == 'run':
+                print(f'\nYou ran away from the {enemy_name}\n')
+                break
+
+            
+
+            if enemy_hp <= 0: 
+                print(f'\nYou defeated the {enemy_name} and gained an experience point!\n')
+                self.xp += 1
+                self.kills += 1
+                
+                if self.xp == self.lvl: self.level_up()
+                
+                break
+        
+            enemy_dmg = self.lvl*random.randint(0,10)
+            self.hp -= enemy_dmg
+            
+            print(f'\nThe {enemy_name} attacked you and dealt {enemy_dmg} damage.\n')
+            
+            if self.hp <= 0: break
+            
+
+    def level_up(self):
+        self.lvl += 1
+        self.hp = 10*(self.lvl+self.con)
+        self.xp = 0
+        print(f'\nCongrats! You made it to level {self.lvl}!\n')
+
 
     def dead(self):
         print(f'\nOh dear, {self.name}... it looks like you have been defeated. Better luck next time.\n')

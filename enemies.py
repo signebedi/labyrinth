@@ -1,11 +1,11 @@
 # this file contains a dictionary of all the available enemies in the game
 
 enemies = [
-    {"name": "Hunter", "hp": 20, "strength": "Earth", "weakness": "Fire",  "drops": ["Long Bow", "Arrow", "cooked morsel"]},
+    {"name": "Hunter", "hp": 10, "strength": "Earth", "weakness": "Fire",  "drops": ["Long Bow", "Arrow", "cooked morsel"]},
     {"name": "Scorpion", "hp": 7, "strength": "Water", "weakness": "Earth", "drops": ["Scorpion Tail", " coins"]},
-    {"name": "Alien", "hp": 100, "strength": "Earth", "weakness": "Water", "drops": ["Alien Tail", "Potion", "coins"]},
-    {"name": "Town Drunk", "hp": 50, "strength": "None", "weakness": "Fire", "drops": ["old shoe", "coins"]},
-    {"name": "Robot", "hp": 50, "strength": "Storm Magic", "weakness": "water magic", "drops": ["metal", "coins"]},
+    {"name": "Alien", "hp": 15, "strength": "Earth", "weakness": "Water", "drops": ["Alien Tail", "Potion", "coins"]},
+    {"name": "Town Drunk", "hp": 5, "strength": "None", "weakness": "Fire", "drops": ["old shoe", "coins"]},
+    {"name": "Robot", "hp": 15, "strength": "Storm Magic", "weakness": "water magic", "drops": ["metal", "coins"]},
     {"name": "Witch", "hp": 6, "strength": "none", "weakness": "fire magic", "drops": ["broom", "coins"]},
     {"name": "Lava Monster", "hp": 4, "strength": "fire magic", "weakness": "water magic", "drops": ["slime", "coins", "lava rock"]},
     {"name": "Ghoul", "hp": 4, "strength": "water magic", "weakness": "fire magic", "drops": ["bone", "coins"]},

@@ -40,6 +40,7 @@ def main():
         elif i == 'count': player.counter()
         elif i == 'store': player.store()
         elif i == 'move': player.move(map)
+        elif i == 'fight': player.battle()
         else: print('\nUnknown command! Please try again\n')
     
         if player.hp <= 0: player.dead()

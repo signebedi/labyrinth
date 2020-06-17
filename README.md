@@ -49,13 +49,12 @@ dir(player)</pre></code>
 * <strike>add some initial items to items.py and integrate into labyrinth.py</strike> finished 6.2.2020
 * <strike>merge walking() mode and the static map into the main game, currently in map.py </strike> finished 6.8.2020
 * <strike>select ASCII images to use for weapon, armor, shield, helmet (use color coding to distinguish between unique items); merge ASCII images into player.py; delete ASCII.txt</strike>  finished 6.8.2020
-* modify stats mode to show ASCII art of the character and their armor, as well as their kill count, and use colorama to modify the color of character stats
+* <strike>add battle() mode</strike> finished 6.16.2020
+* develop logic for spellbook and inventory
+* add player inventory interface to equip different items, and incorporate equipment ASCII art into the interface
 * finish store() mode
-* add battle() mode
 * add save() mode
 * develop a system for random potions and special items to drop from monsters
-* add a player inventory interface that allows the character to equip items and modify their stats
-
 
 ## Video game resources for Angus:
 1. https://medium.com/@angellom/writing-a-python-dungeon-game-part-i-47e35668f16b 
