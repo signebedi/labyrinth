@@ -28,7 +28,7 @@ undergoing some development.
 
 
 ## Debugging
-To make calls to inventory items, use the following synax:
+To make calls to inventory items, use the following syntax:
 <pre><code>items[0]['description']</pre></code>
 
 To make calls to the list of enemies, use the following syntax:
